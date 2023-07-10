@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Chat App CSS Illustration Master</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="dist/output.css" />
+  </head>
+  <body class="bg-lightGrayishViolet min-w-[375px]">
+    <div class="pattern"></div>
+    <div class="pattern__second"></div>
+    <div
+      class="mx-auto mt-52 flex flex-col gap-5 mb-20 relative md:flex-row md:w-2/3 md:gap-20 items-center"
+    >
+      <div
+        class="bg-white p-3 rounded-[2rem] mx-5 shadowMobile mb-10 md:flex-1 md:max-w-[22rem]"
+      >
+        <div
+          class="header bg-gradient-to-r from-lightViolet to-lightMagenta rounded-t-3xl rounded-b-lg shadow-lg pt-12 px-5 relative"
+        >
+          <div
+            class="poni w-[11rem] h-6 rounded-b-2xl bg-white absolute top-0 left-[4.25rem] md:w-[12rem]"
+          ></div>
+          <div class="flex">
+            <button class="mr-3 mb-3"><</button>
+            <div class="flex items-center gap-3 flex-1 mb-3">
+              <img
+                src="images/avatar.jpg"
+                alt=""
+                class="w-8 h-8 rounded-full ring-2 ring-white"
+              />
+              <div class="">
+                <h1 class="text-sm">Samuel Green</h1>
+                <p class="text-darkGrayishBlue text-[.60rem]">
+                  Available to Walk
+                </p>
+              </div>
+            </div>
+            <div class="bullet mt-2">
+              <div class="w-1 h-1 rounded-full bg-white mb-0.5"></div>
+              <div class="w-1 h-1 rounded-full bg-white mb-0.5"></div>
+              <div class="w-1 h-1 rounded-full bg-white"></div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="bg-lightMagenta/10 -mt-8 pt-12 px-3 flex flex-col rounded-3xl"
+        >
+          <div class="chat__left mb-3 pr-4">
+            <p>That sounds great. I’d be happy to discuss more.</p>
+          </div>
+          <div class="chat__left mb-5">
+            <p>Could you send over some pictures of your dog, please?</p>
+          </div>
+          <div class="flex gap-3 justify-end mb-3">
+            <img
+              src="images/dog-image-1.jpg"
+              alt="dog-image-1"
+              class="w-12 h-12 rounded-xl shadow-md"
+            />
+            <img
+              src="images/dog-image-2.jpg"
+              alt="dog-image-2"
+              class="w-12 h-12 rounded-xl shadow-md"
+            />
+            <img
+              src="images/dog-image-3.jpg"
+              alt="dog-image-3"
+              class="w-12 h-12 rounded-xl shadow-md"
+            />
+          </div>
+          <div class="chat__right mb-3 pl-3 pr-2 w-2/3">
+            <p>Here are a few pictures. She’s a happy girl!</p>
+          </div>
+          <div class="chat__right mb-5 pl-2 w-2/5">
+            <p>Can you make it?</p>
+          </div>
+          <div class="chat__left mb-5 px-4 w-3/5">
+            <p>
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </p>
+          </div>
+          <button class="price mb-3">
+            <p class="price__paragraph gap-8">
+              <span class="text-xs font-thin text-lightGrayishViolet"
+                >30 minute walk</span
+              >
+              $29
+            </p>
+          </button>
+          <button class="price">
+            <p class="price__paragraph gap-14">
+              <span class="text-xs font-thin text-lightGrayishViolet"
+                >1 hour walk
+              </span>
+              $49
+            </p>
+          </button>
+          <div
+            class="w-full bg-white my-5 rounded-3xl overflow-hidden flex justify-between items-center"
+          >
+            <input
+              type="text"
+              placeholder="Type a message..."
+              class="placeholder:text-grayishBlue placeholder:text-xs pl-6 py-3 px-1 text-black text-sm focus:outline-none"
+            />
+            <button
+              class="bg-veryDarkDesaturedViolet w-8 h-8 rounded-full font-bold text-xl mr-2"
+            >
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="content text-veryDarkDesaturedViolet md:flex-1">
+        <h1 class="text-center text-[2.50rem] font-bold mb-5 md:text-left">
+          Simple booking
+        </h1>
+        <p class="text-center mx-10 md:text-left md:mx-0 md:mr-8">
+          Stay in touch with our dog walkers through the chat interface. This
+          makes it easy to discuss arrangements and make bookings. Once the walk
+          has been completed you can rate your walker and book again all through
+          the chat.
+        </p>
+      </div>
+    </div>
+
+    <div class="attribution text-black">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/numuri" target="_blank">Numuri</a>.
+    </div>
+  </body>
+</html>

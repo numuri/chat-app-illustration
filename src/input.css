@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+    font-family: "Rubik", sans-serif;
+    color: white;
+  }
+}
+
+@layer components {
+  .chat__left {
+    @apply bg-veryLightMagenta/10 text-moderateViolet w-2/3 py-2 pl-3 text-xs rounded-t-2xl rounded-br-2xl rounded-bl-md;
+  }
+
+  .chat__right {
+    @apply bg-white text-desaturedDarkViolet py-2 text-xs rounded-t-2xl rounded-bl-2xl rounded-br-md self-end shadow-md;
+  }
+
+  .price {
+    @apply bg-gradient-to-r from-lightMagenta to-lightViolet w-3/4 h-12  rounded-t-2xl rounded-br-2xl rounded-bl-lg shadow-md;
+  }
+}
+
+@layer utilities {
+  .pattern {
+    @apply w-1/2 h-[53rem] bg-gradient-to-b from-lightMagenta to-lightViolet rounded-br-full absolute top-0 md:w-[23.5%] md:h-[60rem];
+  }
+
+  .pattern__second {
+    @apply w-1/2 h-[53rem] bg-gray-200/20 rounded-tl-full absolute bottom-0 right-0 md:w-[23.5%] md:h-[60rem] md:-bottom-60;
+  }
+
+  .shadowMobile {
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  .price__paragraph {
+    @apply text-lg font-bold flex justify-center items-center;
+  }
+}
